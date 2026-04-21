@@ -15,11 +15,7 @@
   --gray:#999;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
   font-family:'Poppins',sans-serif;
@@ -52,7 +48,6 @@ nav a{
   font-size:13px;
   letter-spacing:2px;
   text-transform:uppercase;
-  transition:0.3s;
 }
 
 nav a:hover{
@@ -66,12 +61,10 @@ nav a:hover{
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:20px;
 }
 
 .hero h1{
   font-size:65px;
-  letter-spacing:3px;
 }
 
 .gold{
@@ -93,7 +86,6 @@ nav a:hover{
   border:1px solid var(--gold);
   color:var(--gold);
   text-decoration:none;
-  transition:0.3s;
 }
 
 .btn:hover{
@@ -130,7 +122,7 @@ nav a:hover{
   line-height:1.6;
 }
 
-/* SERVICES */
+/* SECTION */
 .section{
   padding:80px 60px;
 }
@@ -143,6 +135,7 @@ nav a:hover{
   -webkit-text-fill-color:transparent;
 }
 
+/* SERVICES */
 .services{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -167,6 +160,32 @@ nav a:hover{
 
 .service p{
   color:var(--gray);
+}
+
+/* INFO GRID */
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:30px;
+}
+
+.info{
+  border:1px solid #111;
+  padding:25px;
+}
+
+.info:hover{
+  border-color:var(--gold);
+}
+
+.info h4{
+  color:var(--gold);
+  margin-bottom:10px;
+}
+
+.info p{
+  color:#aaa;
+  font-size:14px;
 }
 
 /* FOOTER */
@@ -200,7 +219,7 @@ footer{
   </div>
 </section>
 
-<!-- INTRO WITH IMAGE -->
+<!-- INTRO -->
 <section class="intro" id="about">
 
   <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d" alt="Import Export">
@@ -209,8 +228,7 @@ footer{
     <h2>About MCG</h2>
     <p>
     Mediterranee Commerce Global SARL is a Morocco-based trading company located in Nador.
-    We specialize in import, export, and distribution, connecting markets worldwide with
-    efficiency, reliability, and professionalism.
+    We specialize in import, export, and distribution, connecting global markets with efficiency and reliability.
     </p>
   </div>
 
@@ -245,8 +263,51 @@ footer{
   </div>
 </section>
 
+<!-- COMPANY INFO -->
+<section class="section" id="contact">
+  <h2>Company Information</h2>
+
+  <div class="info-grid">
+
+    <div class="info">
+      <h4>Company</h4>
+      <p>Mediterranee Commerce Global SARL</p>
+    </div>
+
+    <div class="info">
+      <h4>Director</h4>
+      <p>Zakaria Mansuri</p>
+    </div>
+
+    <div class="info">
+      <h4>Phone</h4>
+      <p>+212 726-951875</p>
+    </div>
+
+    <div class="info">
+      <h4>Email</h4>
+      <p>contact@mcg-trade.com</p>
+    </div>
+
+    <div class="info">
+      <h4>Address</h4>
+      <p>
+      Zone Industrielle Selouane<br>
+      Route Nationale 2<br>
+      62000 Nador, Morocco
+      </p>
+    </div>
+
+    <div class="info">
+      <h4>Capital</h4>
+      <p>100,000 DHS</p>
+    </div>
+
+  </div>
+</section>
+
 <!-- FOOTER -->
-<footer id="contact">
+<footer>
   © 2026 Mediterranee Commerce Global SARL
 </footer>
 
